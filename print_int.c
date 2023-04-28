@@ -20,7 +20,7 @@ int print_int(va_list arguments, char *buf, unsigned int ibuf)
 		iuf = handl_buf(buf, '-', ibuf);
 		isneg = 1;
 	}
-	else 
+	else
 	{
 		int_in = int_input;
 	}
