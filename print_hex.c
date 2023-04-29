@@ -10,13 +10,13 @@
 int print_hex(va_list arguments, char *buf, unsigned int ibuf)
 {
 	int int_input, i, isnegative, count, first_digit;
-	char *hxadecimal, *binary;
+	char *hexadecimal, *binary;
 
 	int_input = va_arg(arguments, int);
 	isnegative = 0;
 	if (int_input == 0)
 	{
-		ibuf = handl_buf(bug, '0', ibuf);
+		ibuf = handl_buf(buf, '0', ibuf);
 		return (1);
 	}
 	if (int_input < 0)
@@ -33,7 +33,7 @@ int print_hex(va_list arguments, char *buf, unsigned int ibuf)
 			first_digit = 1;
 		if (first_digit)
 		{
-			ibuf = handl_buf(buf, hexaddecimal[i], ibuf);
+			ibuf = handl_buf(buf, hexadecimal[i], ibuf);
 			count++;
 		}
 	}

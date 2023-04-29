@@ -8,7 +8,7 @@
  */
 char *fill_oct_array(char *bnr, char *oct)
 {
-	int op, i, k, ioct, limit;
+	int op, i, ioct, limit, j;
 
 	oct[11] = '\0';
 	for (i = 31, ioct = 10; i >= 0; i--, ioct--)
