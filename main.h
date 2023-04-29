@@ -20,7 +20,7 @@ typedef struct print
 } print_t;
 
 int _printf(const char *format, ...);
-int print_buf(char *buf, unsigned int buf);
+int print_buf(char *buf, unsigned int nbuf);
 int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int);
 int ev_print_func(const char *s, int index);
 int print_chr(va_list arguments, char *buf, unsigned int ibuf);
